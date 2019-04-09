@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RACEXTKeyPathCoding.h"
-#import "RACmetamacros.h"
+#import "EXTKeyPathCoding.h"
+#import "metamacros.h"
 
 /// Creates a signal which observes `KEYPATH` on `TARGET` for changes.
 ///
@@ -47,10 +47,10 @@
 /// subscription, then sends the new value every time it changes, and sends
 /// completed if self or observer is deallocated.
 #define RACObserve(TARGET, KEYPATH) \
-({ \
-__weak id target_ = (TARGET); \
-[target_ rac_valuesForKeyPath:@keypath(TARGET, KEYPATH) observer:self]; \
-})
+	({ \
+		__weak id target_ = (TARGET); \
+		[target_ rac_valuesForKeyPath:@keypath(TARGET, KEYPATH) observer:self]; \
+	})
 
 @class RACDisposable;
 @class RACSignal;
