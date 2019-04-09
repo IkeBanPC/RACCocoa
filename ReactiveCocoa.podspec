@@ -22,7 +22,6 @@ ReactiveCocoa v2.5 without annoying warnings.
                        DESC
 
   s.homepage         = 'https://github.com/IkeBanPC/RACCocoa'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'IkeBanPC' => 'ikebanpc@gmail.com' }
   s.source           = { :git => 'https://github.com/IkeBanPC/RACCocoa.git', :tag => s.version.to_s }
